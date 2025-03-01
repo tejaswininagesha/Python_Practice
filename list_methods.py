@@ -49,9 +49,9 @@ print(num)
 
 num = [20, 99, 40, 30, 35, 89, 45]
 num.sort()
-
 num.reverse()
 print(num)
+
 
 #  10 copy (won't affect if you made changes in original)
 num = [20, 99, 40, 30, 35, 89, 45]
