@@ -8,6 +8,7 @@ for price in prices:
 print(f"Your Total price is: {total}")
 
 
+
 # create "L" shape using loops
 numbers = [1,1,1,1,1,7]
 for num in numbers:
