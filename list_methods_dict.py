@@ -78,3 +78,49 @@ for number in numbers:
 print(f"New list without duplicates :{unique}")
 
 
+# DICTIONARIES
+
+student_profile = {
+	"Name": "Tejaswini H D",
+	"Age" : 25,
+	"Gender": "Female",
+	"Qualification": "B.E",
+	"is_married": True
+}
+
+student_profile["Place"] = "Kolar"
+student_profile["age"] = "26"
+print(student_profile)
+
+# digits to words
+phone_num = input("Enter no: ")
+
+digits_in_words = {
+	"1": "One",
+	"2": "Two",
+	"3": "Three",
+	"4": "Four",
+	"5": "Five"
+}
+
+output = ""
+for char in phone_num:
+	output += digits_in_words.get(char, "*") + " "
+print(f"{phone_num} = {output}")
+
+# Emojis convertor
+
+message = input(">: ")
+
+words = message.split(" ")
+emojis = {
+	"143": "❤️",
+	":)": "😀",
+	":(": "😔",
+	"(!)": "🎁"
+}
+
+output = ""
+for word in words:
+	output += emojis.get(word, word) + " "
+print(output)
