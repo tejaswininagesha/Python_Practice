@@ -29,6 +29,8 @@ class Person:
 personOne = Person("Nagesh", "Male", 31)
 personTwo = Person("Teju", "Female", 25)
 
+
+
 class Email:
 	def __init__(self, date, subject, body, to, from_whom):
 		self.date = date
@@ -81,13 +83,13 @@ class Student:
 student_1 = Student("Rakesh", "6100", "IX", 40, 30, 35, 35, 45, 85)
 student_1.get_result()
 
-# student_2 = Student("Kushi Raj", "6059", "IX", 89, 90, 100, 100, 123, 98)
-# student_2.get_percentage()
-# student_2.get_result()
-#
-# student_3 = Student("Ankitha M", "6001", "IX", 75, 79, 95, 93, 106, 85)
-# student_3.get_percentage()
-# student_3.get_result()
+student_2 = Student("Kushi Raj", "6059", "IX", 89, 90, 100, 100, 123, 98)
+student_2.get_percentage()
+student_2.get_result()
+
+student_3 = Student("Ankitha M", "6001", "IX", 75, 79, 95, 93, 106, 85)
+student_3.get_percentage()
+student_3.get_result()
 
 
 class Rectangle:
@@ -134,5 +136,23 @@ class Bank_account:
 account = Bank_account(1000)
 account.deposit(500)
 account.withdraw(600)
+
+
+class VolumeSphere:
+	def __init__(self, radius):
+		self.radius = radius
+
+	def volume(self):
+		π = 3.14
+		vol =  4/3 * π * self.radius * self.radius * self.radius
+		return vol
+
+vol1 = VolumeSphere(2)
+
+print(f"Volume of Sphere: {vol1.volume():.2f} cm\u00B3")
+
+
+
+
 
 
